@@ -29,7 +29,12 @@
       <p style="margin-bottom: 3rem;">Cuéntanos sobre tu proyecto y nos pondremos en contacto lo antes posible</p>
 
       <div style="max-width: 600px; margin: 0 auto; background: var(--primary-dark); padding: 3rem 2rem; border-radius: 12px;">
-        <form id="contact-form" method="POST">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="b4d6295d-f645-469c-8a57-26936ec2b3ee">
+          <input type="hidden" name="subject" value="Nuevo mensaje desde otfactory.es">
+          <input type="hidden" name="from_name" value="OT Factory Web">
+          <input type="hidden" name="redirect" value="https://otfactory.es?enviado=1">
+          <input type="checkbox" name="botcheck" style="display:none">
           <div class="form-group">
             <label for="name">Nombre Completo *</label>
             <input type="text" id="name" name="name" required>
@@ -84,13 +89,5 @@
     </p>
   </footer>
 
-  <script>
-    // Placeholder for Cloudflare form handling
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      // TODO: Conectar con Cloudflare Workers
-      // Por ahora, mostrar mensaje de confirmación
-      console.log('Form submitted - ready for Cloudflare integration');
-    });
-  </script>
 </body>
 </html>

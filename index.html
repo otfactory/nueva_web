@@ -144,7 +144,14 @@
         </div>
       </div>
 
-      <form class="contact-form" id="contact-form" method="POST">
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="b4d6295d-f645-469c-8a57-26936ec2b3ee">
+        <input type="hidden" name="subject" value="Nuevo mensaje desde otfactory.es">
+        <input type="hidden" name="from_name" value="OT Factory Web">
+        <input type="hidden" name="redirect" value="https://otfactory.es?enviado=1">
+        <!-- Honeypot anti-spam -->
+        <input type="checkbox" name="botcheck" style="display:none">
+
         <div class="form-row">
           <div class="form-group">
             <label for="name">Nombre</label>
