@@ -405,7 +405,9 @@ nav {
 }
 
 .contact-hero-content .section-eyebrow {
-  color: var(--accent);
+  color: var(--white);
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
 
 .contact-hero-content h1 {
