@@ -377,6 +377,161 @@ nav {
   }
 }
 
+/* ─── CONTACT PAGE ───────────────────────────────── */
+.contact-hero {
+  position: relative;
+  min-height: 34vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.contact-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/industry.jpg');
+  background-size: cover;
+  background-position: center 45%;
+  filter: brightness(0.32);
+}
+
+.contact-hero-content {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.5rem 2rem 4rem;
+  color: var(--white);
+}
+
+.contact-hero-content .section-eyebrow {
+  color: var(--accent);
+}
+
+.contact-hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.contact-hero-content p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.8);
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+.contact-form-section {
+  background: var(--gray-bg);
+  padding: 5rem 2rem 7rem;
+}
+
+.contact-form-card {
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 3.5rem 4rem;
+  box-shadow: 0 8px 48px rgba(44,56,88,0.10);
+}
+
+.contact-form-card .form-group label {
+  color: var(--primary-dark);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.contact-form-card .form-group input,
+.contact-form-card .form-group textarea {
+  background: var(--gray-bg);
+  border: 1.5px solid var(--gray-light);
+  color: #1a2238;
+}
+
+.contact-form-card .form-group input:focus,
+.contact-form-card .form-group textarea:focus {
+  background: var(--white);
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(78,100,156,0.15);
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.form-alt {
+  font-size: 0.92rem;
+  color: var(--gray-text);
+}
+
+.form-alt a {
+  color: var(--primary-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-alt a:hover { text-decoration: underline; }
+
+/* ─── THANK YOU PAGE ─────────────────────────────── */
+.thankyou-page {
+  position: relative;
+  min-height: calc(100vh - 82px - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.thankyou-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/thankyou.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.45);
+}
+
+.thankyou-content {
+  position: relative;
+  color: var(--white);
+  padding: 3rem 2rem;
+  max-width: 560px;
+}
+
+.thankyou-content h2 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.thankyou-content p {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 700px) {
+  .contact-form-card {
+    padding: 2.5rem 1.5rem;
+    border-radius: 14px;
+  }
+  .form-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .form-submit { width: 100%; text-align: center; }
+}
+
 /* ─── CONTACT BANNER ─────────────────────────────── */
 .contact-banner {
   background: var(--primary-dark);
